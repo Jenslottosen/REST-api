@@ -1,0 +1,27 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/62c72a4a6ab25f80155b4591
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+  "name": "Coding Champ",
+  "subscribedToChannel": "Jens is amazing"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/62c72a4a6ab25f80155b4591
+
+###
+PATCH http://localhost:3000/subscribers/62c72a306ab25f80155b458f
+Content-Type: application/json
+
+{
+  "name": "New Name"
+}
